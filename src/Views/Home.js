@@ -117,7 +117,7 @@ export class Home extends React.Component {
         <Skeleton active loading={loading.main}>
         <SectionTitle href="/search" title="Subject" />
         <Row>
-          {subjects.map((c, index) => (
+          {subjects.map((c) => (
             <InfoCard
               title={c.title}
               key={c.title}
@@ -131,7 +131,7 @@ export class Home extends React.Component {
         </Row>
         <SectionTitle href="/course" title="Course" />
         <Row>
-          {courses.map((c, index) => (
+          {courses.map((c) => (
             <InfoCard
               title={c.name}
               key={c.name}
