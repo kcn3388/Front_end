@@ -129,7 +129,7 @@ export class Compare extends React.Component {
     super(...props);
     axios({
       method: 'get',
-      url: 'http://localhost:8080/api/subjects'
+      url: 'http://45.76.112.88:8080/yzx/api/subjects'
     }).then(rsp => {
       this.setState({
         data: rsp.data.subjects,
@@ -199,14 +199,14 @@ export class Compare extends React.Component {
     });
     let rsp1 = await axios({
       method: 'get',
-      url: 'http://localhost:8080/api/subject',
+      url: 'http://45.76.112.88:8080/yzx/api/subject',
       params: {
         id: realCompare[0]
       }
     });
     let rsp2 = await axios({
       method: 'get',
-      url: 'http://localhost:8080/api/subject',
+      url: 'http://45.76.112.88:8080/yzx/api/subject',
       params: {
         id: realCompare[1]
       }

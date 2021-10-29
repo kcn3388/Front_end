@@ -36,7 +36,7 @@ export class SubjectDetail extends React.Component {
     const subject_id = this.props.match.params.id;
     axios({
       method: 'get',
-      url: 'http://localhost:8080/api/subject',
+      url: 'http://45.76.112.88:8080/yzx/api/subject',
       params: {
         id: subject_id
       }

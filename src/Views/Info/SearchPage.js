@@ -24,7 +24,7 @@ export class SearchPage extends React.Component {
     const userInfo = new UserInfo();
     axios({
       method: 'get',
-      url: 'http://localhost:8080/api/subjects'
+      url: 'http://45.76.112.88:8080/yzx/api/subjects'
     }).then(rsp => {
       let data = rsp.data.subjects;
       data.forEach(item => {

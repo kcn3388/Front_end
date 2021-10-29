@@ -64,7 +64,7 @@ export class Home extends React.Component {
     super(...props);
     axios({
       method: 'get',
-      url: 'http://localhost:8080/api/courses'
+      url: 'http://45.76.112.88:8080/yzx/api/courses'
     }).then(rsp => {
       let courses = rsp.data.courses;
       let display = [];
@@ -84,7 +84,7 @@ export class Home extends React.Component {
     });
     axios({
       method: 'get',
-      url: 'http://localhost:8080/api/subjects'
+      url: 'http://45.76.112.88:8080/yzx/api/subjects'
     }).then(rsp => {
       let loading = this.state.loading;
       loading.main = false;

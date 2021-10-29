@@ -36,7 +36,7 @@ export class CourseDetail extends React.Component {
     const course_id = this.props.match.params.id;
     axios({
       method: 'get',
-      url: 'http://localhost:8080/api/course',
+      url: 'http://45.76.112.88:8080/yzx/api/course',
       params: {
         id: course_id
       }

@@ -66,7 +66,7 @@ class App extends React.Component {
     if (info && info !== -1) {
       axios({
         method: 'post',
-        url: 'http://localhost:8080/api/token',
+        url: 'http://45.76.112.88:8080/yzx/api/token',
         data: {
           token: info.token
         }
@@ -107,7 +107,7 @@ class App extends React.Component {
       }
       axios({
         method: 'post',
-        url: 'http://localhost:8080/api/token',
+        url: 'http://45.76.112.88:8080/yzx/api/token',
         data: {
           token: session.token
         }
@@ -147,7 +147,7 @@ class App extends React.Component {
               const userInfo = new UserInfo();
               axios({
                 method: 'post',
-                url: 'http://localhost:8080/api/logout',
+                url: 'http://45.76.112.88:8080/yzx/api/logout',
                 data: {
                   token: userInfo.getUserInfo().token
                 }

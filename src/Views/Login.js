@@ -37,7 +37,7 @@ class LoginForm extends React.Component {
         }
         axios({
           method: 'post',
-          url: 'http://localhost:8080/api/user',
+          url: 'http://45.76.112.88:8080/yzx/api/user',
           data: {
             name: values['username'],
             password: values['password']
